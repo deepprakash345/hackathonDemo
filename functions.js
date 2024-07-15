@@ -1,24 +1,4 @@
-/**
- * Get Full Name
- * @name getFullName Concats first name and last namessss
- * @param {string} firstname in Stringformat
- * @param {string} lastname in Stringformat
- * @return {string}
- */
-function getFullName(firstname, lastname) {
-    return `${firstname} ${lastname}`.trim();
-}
 
-/**
- * Validate Length
- * @name validateLength validates Length of String
- * @param {string} argument 
- * @param {number} length 
- * @return {boolean} 
- */
-function validateLength(str, length) {
-    return str.length==length;
-}
 
 /**
  * Calculate Total Principal
@@ -42,9 +22,9 @@ function getPrincipalAmount(sipValue, yearsOfInvestment) {
 function getTotalInvestmentValue(sipValue, yearsOfInvestment, interestRate) {
 	let i=interestRate/1200;
     let n=yearsOfInvestment*12;
-	return sipValue*(Math.pow(1+i,yearsOfInvestment)-1)*((1+i)/i)
+	return sipValue*(Math.pow(1+i,n)-1)*((1+i)/i)
 }
 
 
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName,validateLength,getPrincipalAmount,getTotalInvestmentValue };
+export { getPrincipalAmount,getTotalInvestmentValue };
