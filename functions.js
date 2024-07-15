@@ -25,4 +25,4 @@ function getTotalInvestmentValue(sipValue, yearsOfInvestment, interestRate) {
 
 
 // eslint-disable-next-line import/prefer-default-export
-export { getPrincipalAmount,getTotalInvestmentValue };
+export { getPrincipalAmount,  getTotalInvestmentValue };
