@@ -9,6 +9,17 @@ function getFullName(firstname, lastname) {
     return `${firstname} ${lastname}`.trim();
 }
 
+/**
+ * Validate Length
+ * @name validateLength validates Length of String
+ * @param {string} argument in Stringformat
+ * @param {number} length in Numberformat
+ * @return {boolean} 
+ */
+function validateLength(str, length) {
+    return str.length==length;
+}
+
 
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName };
+export { getFullName,validateLength };
