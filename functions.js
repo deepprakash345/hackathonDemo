@@ -12,8 +12,8 @@ function getFullName(firstname, lastname) {
 /**
  * Validate Length
  * @name validateLength validates Length of String
- * @param {string} argument in Stringformat
- * @param {number} length in Numberformat
+ * @param {string} argument 
+ * @param {number} length 
  * @return {boolean} 
  */
 function validateLength(str, length) {
