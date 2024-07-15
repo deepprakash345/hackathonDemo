@@ -19,7 +19,8 @@ function getPrincipalAmount(sipValue, yearsOfInvestment) {
  */
 function getTotalInvestmentValue(sipValue, yearsOfInvestment, interestRate) {
         let i=interestRate/1200;
-        return sipValue*(Math.pow(1+i,yearsOfInvestment)-1)*((1+i)/i)
+    let n=yearsOfInvestment*12;
+	return sipValue*(Math.pow(1+i,n)-1)*((1+i)/i);
 }
 
 
